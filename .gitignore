@@ -1,2 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+gulp/node_modules
+assets/css
