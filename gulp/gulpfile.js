@@ -16,7 +16,6 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch(path + "/assets/scss/*.scss", ['sass']);
-    gulp.watch(path + "/assets/js/vendors/*.js", ['concat']);
     gulp.watch(path + "/*.html").on('change', browserSync.reload);
 });
 
@@ -28,12 +27,6 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path + "/assets/css/"))
         .pipe(browserSync.stream());
-});
-
-gulp.task('concat', function() {
-    return gulp.src(path + "/assets/js/vendors/*.js")
-        .pipe(concat("vendors.js"))
-        .pipe(gulp.dest(path + "/assets/js/"));
 });
 
 gulp.task('default', ['serve']);
