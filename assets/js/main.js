@@ -194,20 +194,6 @@
 
     } // initCountNbr
 
-    /* --------------------------------------------------
-     Blog Masonry Layout
-     -------------------------------------------------- */
-
-    function initBlogMasonry() {
-
-        var $container = $('.blog-container');
-        // init
-        $container.isotope({
-            // options
-            itemSelector: '.blog-selector',
-            percentPosition: true
-        });
-    }
 
     /* --------------------------------------------------
      Contact Pages
