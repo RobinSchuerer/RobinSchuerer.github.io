@@ -3118,6 +3118,7 @@ fieldset[disabled] .form-control:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
+  height: 100%;
 }
 
 .ft-cards .ft-item:hover {
